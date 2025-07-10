@@ -7,35 +7,78 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<video autoplay muted loop playsinline class="bg-video">
-    <source src="bg-video.mp4" type="video/mp4" />
-</video>
-
+<div id="video-container">
+    <video autoplay muted loop id="bg-video">
+        <source src="bg-video.mp4" type="video/mp4" />
+    </video>
+</div>
 <div class="content">
     <header>
-        <h1>Андрей Пацук</h1>
-        <p>Web Developer | Backend | Full-Stack</p>
+        <img src="image.jpg" id="Me">
+        <div>
+            <h1>Andrei Patsuk</h1>
+            <p>Web Developer | Backend | Full-Stack</p>
+        </div>
     </header>
-
-    <section>
-        <h2>Обо мне</h2>
-        <p>Разработчик с опытом в Java, JS, SQL, MySQL и других технологиях.</p>
-    </section>
-
-    <section>
-        <h2>Опыт работы</h2>
-        <ul>
-            <li>XYZ Company (2022–2024) — Full-Stack разработка</li>
-            <li>Фриланс-проекты — сайты, REST API, личные кабинеты</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Контакты</h2>
-        <p>Email: example@mail.com</p>
-        <p>Telegram: @yourhandle</p>
-    </section>
-</div>
+        <div class="main-content">
+            <div class="content-column">
+                <section class="content-section">
+                    <h2>Basic Information</h2>
+                    <p>
+                        <strong>Andrey Patsuk</strong>, 23 y.o., Belarusian<br>
+                        Aspiring IT / Software Developer<br>
+                        Currently based in Warsaw, Poland
+                    </p>
+                </section>
+                <section class="content-section">
+                    <h2>About Me</h2>
+                    <p>
+                        A self-taught developer passionate about creating scripts, bots, and web applications.<br>
+                        Actively studying both frontend and backend technologies by building my own pet projects.<br>
+                        Familiar with web service architecture.<br>
+                        Quick learner with strong problem-solving skills in non-standard situations.
+                    </p>
+                </section>
+                <section class="content-section">
+                    <h2>Contacts</h2>
+                    <p>Phone number (pl): +48 503 909 732</p>
+                    <p>Email: msi.andragon@mail.com</p>
+                    <p>Telegram: <a href="https://t.me/Gotofol" target="_blank">@Gotofol</a></p>
+                </section>
+            </div>
+            <div class="content-column">
+                <section class="content-section">
+                    <h2>Career Objective</h2>
+                    <p>
+                        Self-taught Full-Stack Developer.<br>
+                        Learning through building real-world projects: working with HTML, CSS, and JavaScript on the frontend, and Java and SQL on the backend.<br>
+                        Interested in architecture, databases, and building scalable web services.<br>
+                        Open to internships or junior-level positions.
+                    </p>
+                </section>
+                <section class="content-section">
+                    <h2>Skills</h2>
+                    <p>
+                        Programming Languages: JavaScript, Java, Python, SQL<br>
+                        Frameworks and Tools: Javalin (Java), Vue (JavaScript), Telethon, Selenium (Python)<br>
+                        English level: Intermediate<br>
+                        Experience with REST APIs, basic backend architecture, and UI development
+                    </p>
+                </section>
+                <section class="content-section">
+                    <h2>Work Experience</h2>
+                    <p>
+                        Built a Java-based website from scratch as a personal project<br>
+                        Previous experience as a System Administrator<br>
+                        Developed Telegram bots and automation scripts using Python<br>
+                        Hands-on experience in roles such as:<br>
+                        Full-Stack / Web Developer
+                        Automation Developer / Bot Developer (Python)
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
 <script src="animation.js"></script>
 </body>
 </html>
