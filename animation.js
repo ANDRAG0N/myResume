@@ -1,18 +1,18 @@
 document.addEventListener("mousemove", (e) => {
     const video = document.getElementById("bg-video");
+    const x = (e.clientX / window.innerWidth - 0.5) * 30; // от -15 до +15
+    const y = (e.clientY / window.innerHeight - 0.5) * 30;
 
-    // Получаем центр экрана
-    const centerX = window.innerWidth / 2;
-    const centerY = window.innerHeight / 2;
+    video.style.transform = `translate(${x}px, ${y}px) scale(1.1)`; // небольшой масштаб, чтобы края не обрезались
+});
 
-    // Смещения от центра (-1 до 1)
-    const offsetX = (e.clientX - centerX) / centerX;
-    const offsetY = (e.clientY - centerY) / centerY;
+document.querySelectorAll('.content-section').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'scale(1.03)';
+        card.style.transition = 'transform 0.3s ease';
+    });
 
-    // Коэффициенты силы смещения (настрой по вкусу)
-    const moveX = offsetX * 20; // 20px влево-вправо
-    const moveY = offsetY * 20;
-
-    // Применяем transform
-    video.style.transform = `translate(calc(-50% + ${moveX}px), calc(-50% + ${moveY}px)) scale(1.05)`;
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'scale(1)';
+    });
 });
